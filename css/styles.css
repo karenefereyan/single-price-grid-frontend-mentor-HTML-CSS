@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: var(--light-gray);
+}
+
+.container{
+    max-width: 90%;
+    margin: 2rem auto;    
+}
+
+.container .top, 
+.container .left,
+.container .right{
+    padding: 1.5rem 1.25rem;
+}
+
+.container h3{
+    font-size: 1.35rem;
+}
+
+.top{
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.top h3{
+    color: var(--cyan);
+}
+
+.top h4{
+    color: var(--bright-yellow);
+}
+
+.top p{
+    color: var(--grayish-blue);
+    line-height: 1.6;
+}
+
+.left{
+    background-color: var(--cyan);
+    color: #fff;
+}
+
+.left h4 span{
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+.left h4{
+    font-weight: 200;
+    opacity: .75;
+}
+
+.left button{
+    padding: 1.1rem 5rem;
+    width: 90%;
+    font-size: 1.05rem;
+    font-weight: bold;
+    margin: 0 auto;
+    border-radius: 10px;
+    color: #fff;
+    background: var(--bright-yellow);
+    border: 0;
+}
+
+.right{
+    background-color: var(--cyan);
+    opacity: .75;
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+}
+
+.right h3{
+    font-weight: 700;
+}
+
+.right ul{
+    list-style: none;
+    padding: 0;
+    opacity: .75;
+}
+
+.right ul li:not(first-child){
+    margin-top: .7rem;
+   
+}
+
+.attribution { 
+    font-size: 1rem; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width:768px){
+    .container{
+        max-width: 70%;
+    }
+    .flex-container{
+        display: flex;
+    }
+    .flex-container .left{
+        width: 50%;
+        border-radius: 0 0 0 10px
+    }
+    .flex-container .right{
+        width: 50%;
+        border-radius: 0 0 10px 0;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .container{
+        max-width: 50%;
+    }
+}
